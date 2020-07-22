@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SecondTableController">
+   <children>
+      <TableView fx:id="secondTableView" layoutX="159.0" layoutY="55.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colTanaman" prefWidth="44.0" text="TANAMAN" />
+            <TableColumn fx:id="colModal" prefWidth="75.0" text="BIAYA" />
+            <TableColumn fx:id="colHasilPanen" prefWidth="75.0" text="HASIL PANEN" />
+            <TableColumn fx:id="colHargaSatuan" text="HARGA SATUAN" />
+            <TableColumn fx:id="colPenjualan" prefWidth="75.0" text="PENJUALAN" />
+            <TableColumn fx:id="colDurasi" prefWidth="75.0" text="DURASI" />
+            <TableColumn prefWidth="90.0" text="PROFIT">
+               <columns>
+                  <TableColumn fx:id="colProfitRupiah" prefWidth="60.0" text="IDR" />
+                  <TableColumn fx:id="colProfitPersen" prefWidth="62.0" text="\%" />
+               </columns>
+            </TableColumn>
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
